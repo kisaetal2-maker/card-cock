@@ -20,7 +20,7 @@ jobs:
       - name: Unpack project
         run: |
           unzip -q card-cock-android.zip -d android-source
-          echo "PROJECT_DIR=$GITHUB_WORKSPACE/android-source/card-cock-android" >> $GITHUB_ENV
+          echo "PROJECT_DIR=$GITHUB_WORKSPACE/android-source/card-cock-android-fixed" >> $GITHUB_ENV
       - uses: gradle/actions/setup-gradle@v4
         with:
           gradle-version: "8.9"
